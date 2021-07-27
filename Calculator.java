@@ -1,43 +1,40 @@
-class Cpa{
-     void cick(){
-    int gol=2;
-    int gol1=3;
-    int sum=gol+gol1;
-    System.out.println(" two number addition:  "+ sum);
-    }
-    void faoul(){
-        int yellow=5;
-        int red=1;
-        int result=yellow-red;
-        System.out.println("Two number subtract: "+ result);
+import java.util.Scanner;
+
+
+class New{
+
+    void add(){
+        
+        System.out.println("Enter your first number: " );
+
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+    
+        System.out.println(" Enter your second number:" );
+        int num2 = input.nextInt();
+
+        int result = num + num2;
+        int sub = num - num2;
+        int result1 = num * num2;
+        int  conclusion = num / num2;
+         
+         
+        System.out.println("Total is: " + result );
+        System.out.println("Subtraction is: " + sub);
+        System.out.println("Multiplication is: " +result1);
+        System.out.println("Division is: " + conclusion );
+        
+         
+        input.close();
 
     }
-    void conar(){
-        int rside=3;
-        int lside=6;
-        int bside=rside*lside;
-        System.out.println("Two side conar  multply: " + bside);
-
-    }
-    void obsid(){
-        int p=10;
-        int p1=2;
-        int to=p/p1;
-        System.out.println(" two trem are divide: " + to);
-
-
-
-    }
-
 }
+
 class Calculator{
-public static void main(String args[])
-{
-    Cpa naimar=new Cpa();
-    naimar.cick();
-    naimar.faoul();
-    naimar.conar();
-    naimar.obsid();
+public static void main(String args[]){
+New obj = new New();
+obj.add();
+}
 
-}
-}
+
+       }
